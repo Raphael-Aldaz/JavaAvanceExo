@@ -1,0 +1,14 @@
+**************************************Commande numéro 1*******************************
+salade
+poulet
+riz
+eau plate
+tarte maison
+
+**************************************Commande numéro 2*******************************
+soupe
+boeuf
+pates
+eau gazeuze
+mousse au chocolat
+
