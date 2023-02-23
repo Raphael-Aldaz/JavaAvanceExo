@@ -36,12 +36,15 @@ public class TpResto {
 		while(scan.hasNextInt() == false)	scan.next();
 		nbMenu = scan.nextInt();
 		ArrayList<String>  order = new ArrayList<String>();
+		
 		try {
 			if(!listOrder.exists()) {
 				listOrder.createNewFile();
 			}
 			FW = new FileWriter(listOrder);
 			BW = new BufferedWriter(FW);
+			
+			
 		for(int i = 0 ; i < nbMenu ; i ++) {
 			System.out.println("Commande numéro " + (i+1));
 			BW.write("**************************************Commande numéro " + (i+1) + "*******************************\n");
@@ -78,7 +81,7 @@ public class TpResto {
 			BW.write("\n");
 			BW.write("\n");
 			System.out.println("Résumé de la commande "+(i+1));
-			System.out.println(order);		//ici on pourrait stocker la commande en base par exemple
+			System.out.println(order);		
 			System.out.println();
 	
 		}
@@ -86,7 +89,7 @@ public class TpResto {
 				e.printStackTrace();
 			}
 			
-						//avant de passer à la suivante
+						
 		
 		BW.close();
 		scan.close();
